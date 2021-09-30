@@ -48,7 +48,7 @@ namespace BeerEncapsulator
             //Console.WriteLine(_avalaibleBeerVolume+ " +" + _avalaibleBottles + " +" + _avalaibleCapsules);
             if (CanFabricateBeer())
             {
-                while (nombreDeBoutteilleFini < nombreDeBoutteilleAFabrique)
+                while (nombreDeBoutteilleFini < nombreDeBoutteilleAFabrique && CanFabricateBeer())
                 {
                     ProductOneBootle();
                     nombreDeBoutteilleFini += 1;
